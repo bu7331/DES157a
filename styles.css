@@ -1,0 +1,67 @@
+body{
+    background:linear-gradient(#BEE7F4,#F8CAF3);
+    height:800px;
+}
+
+main{
+    display:flex;
+    justify-content:space-around;
+    height:220px;
+}
+
+header{
+    padding-top:20px;
+}
+
+section{
+    justify-content:center;
+    flex-wrap:wrap;
+    width: 160px;
+}
+
+#banner{
+    position:relative;
+    display:inline-block;
+    display:flex;
+    justify-content:center;
+    padding-bottom:30px;
+}
+
+#title{
+    position:absolute;
+    text-align:center;
+    top:30px;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+h1{
+    font-size:40px;
+    margin:0;
+}
+
+.cloud{
+    position:relative;
+    display:inline-block;
+    padding-bottom:60px;
+}
+
+.h{
+    position:absolute;
+    top:10px;
+    left:15px;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+li{
+    font-family: 'Open Sans', sans-serif;
+    list-style-type:none;
+    text-align:center;
+    line-height:2;
+}
+
+#snowman{
+    position:fixed;
+    bottom:0;
+    right:0;
+}
+
