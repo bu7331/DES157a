@@ -14,9 +14,11 @@ header{
 }
 
 section{
-    justify-self:center;
+    align-items:center;
+    justify-content:center;
     flex-wrap:wrap;
     width: 160px;
+    height:300px;
 }
 
 #banner{
@@ -41,9 +43,10 @@ h1{
 }
 
 .cloud{
+    align-content:center;
     position:relative;
     display:inline-block;
-    padding-bottom:60px;
+    padding-bottom:60px; 
 }
 
 .h{
@@ -54,17 +57,34 @@ h1{
     font-family: 'Cedarville Cursive', cursive;
 }
 
+.h:hover{
+     transform:scale(1.1);
+     transition-timing-function: ease-in-out;
+     transition-duration:0.5s;
+}
+
 li{
-    font-family: 'Open Sans', sans-serif;
     list-style-type:none;
     text-align:center;
+    align-items:center;
+}
+
+ul li a{
+    list-style-type:none;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration:none;
+    text-align:center;
+    align-items:center;
     line-height:2;
 }
 
-a:hover{
+a:link{
+    text-decoration:none;
+}
+
+ul li a:hover{
     color:purple;
     font-weight:bold;
-    transform:scale(1.2px);
 }
 
 #snowman{
@@ -72,6 +92,22 @@ a:hover{
     bottom:0;
     right:0;
     z-index:-1;
+    animation:colorShift 8s infinite alternate;
+} 
+
+#snowmanB{
+    position:fixed;
+    bottom:0;
+    right:0;
+    z-index:-2;
+}
+
+@keyframes colorShift{
+    0%{opacity:100%;}
+    25%{opacity:75%;}
+    50%{opacity:50%;}
+    75%{opacity:25%;}
+    100%{opacity:0%;}
 }
 
 footer{
