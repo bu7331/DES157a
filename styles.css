@@ -1,6 +1,6 @@
 body{
     background:linear-gradient(#BEE7F4,#F8CAF3);
-    height:800px;
+    height:753px;
 }
 
 main{
@@ -14,7 +14,7 @@ header{
 }
 
 section{
-    justify-content:center;
+    justify-self:center;
     flex-wrap:wrap;
     width: 160px;
 }
@@ -32,6 +32,7 @@ section{
     text-align:center;
     top:30px;
     font-family: 'Cedarville Cursive', cursive;
+    height:20px;
 }
 
 h1{
@@ -49,6 +50,7 @@ h1{
     position:absolute;
     top:10px;
     left:15px;
+    align-self:center;
     font-family: 'Cedarville Cursive', cursive;
 }
 
@@ -59,9 +61,23 @@ li{
     line-height:2;
 }
 
+a:hover{
+    color:purple;
+    font-weight:bold;
+    transform:scale(1.2px);
+}
+
 #snowman{
     position:fixed;
     bottom:0;
     right:0;
+    z-index:-1;
 }
 
+footer{
+    font-family: 'Open Sans', sans-serif;
+    position:fixed;
+    bottom:80px;
+    right:100px;
+    text-align:center;
+}
