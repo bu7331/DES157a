@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Experimentation - Functions and DOM</title>
+</head>
+<body>
+    <h1>JS Experimentaion - Functions and DOM</h1>
+    <h2>Adopt a pet!</h2>
+    <div id="edit">
+        <p>We have a special ___ for you!</p>
+    </div>
+    <script>
+        //Enter if you would like a cat or dog, and you will be provided one.
+        var pet= prompt("Would you prefer a dog or a cat?","");
+        var dogBreed = ["pug", "husky", "lab", "chihauha"];
+        var catBreed = ["longhair", "ragdoll", "maine coon", "siamese"];
+        function dog(){
+            function randomInt(min, max){
+                var numOfValues = max - min +1;
+                var randomNum = Math.random();
+                var randomVal = randomNum * numOfValues;
+                var roundedRandomVal = Math.floor(randomVal);
+                var finalNum = min + roundedRandomVal;
+                return finalNum;
+            }
+            console.log(dogBreed[randomInt(0,3)]);
+            var myDiv = document.getElementById('edit');
+            myDiv.innerHTML = "<p>Yay! Enjoy your new dog </p>"
+        }
+        function cat(){
+            function randomInt(min,max){
+                var numOfValues = max - min +1;
+                var randomNum = Math.random();
+                var randomVal = randomNum * numOfValues;
+                var roundedRandomVal = Math.floor(randomVal);
+                var finalNum = min + roundedRandomVal;
+                return finalNum; 
+            }
+            console.log(catBreed[randomInt(0,3)]);
+            var myDiv = document.getElementById('edit');
+            myDiv.innerHTML = "<p>Yay! Enjoy your new cat </p>"
+        }
+        if (pet === "dog"){
+            dog();
+        }
+        else{
+            cat();
+        }
+    </script>
+</body>
+</html>
