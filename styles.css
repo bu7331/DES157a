@@ -56,6 +56,7 @@ h1{
     left:15px;
     align-self:center;
     font-family: 'Cedarville Cursive', cursive;
+    color:rgb(83, 58, 110);
 }
 
 .h:hover{
@@ -66,16 +67,16 @@ h1{
 
 li{
     list-style-type:none;
-    text-align:center;
-    align-items:center;
+    padding:none;
 }
+
 
 ul li a{
     list-style-type:none;
     font-family: 'Open Sans', sans-serif;
     text-decoration:none;
-    text-align:center;
-    align-items:center;
+    /* text-align:center;
+    align-items:center; */
     line-height:2;
 }
 
