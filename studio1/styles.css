@@ -1,0 +1,18 @@
+body{
+    width:auto;
+    margin:auto;
+    background-image:url("images/preludebg.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    font-family:'Italianno', cursive;
+    color:white;
+}
+
+.prelude{
+    display:flex;
+    align-items: center;
+}
+
+form{
+    display:none;
+}

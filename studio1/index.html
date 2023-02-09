@@ -4,40 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <title>Madlibs Project</title>
 </head>
 <body>
+    <div id="prelude">
+        <h2>Prelude</h2>
+        <p>You are a villager in a mafia game. Unfortunately, you were the chosen one whom the mafia decided to kill on the first night. On the upside, you get to decide how you go down!</p>
+    </div>
 
-    <h2>Prelude</h2>
-    <p>You are a villager in a mafia game. Unfortunately, you were the chosen one whom the mafia decided to kill on the first night. On the upside, you get to decide how you go down!</p>
     <form method="post" action="processor.php">
 
-        <label for="yourName">What is your name?</label>
-        <input type="text" name="yourName" id="yourName">
+        <div id="fill1">
+            <label for="yourName">What is your name?</label>
+            <input type="text" name="yourName" id="yourName">
 
-        <label for="time">What time did you die?</label>
-        <input type="text" name="time" id="time">
+            <label for="time">What time did you die?</label>
+            <input type="text" name="time" id="time">
 
-        <label for="location">Where did you die?</label>
-        <input type="text" name="location" id="location">
+            <label for="location">Where did you die?</label>
+            <input type="text" name="location" id="location">
+        </div>
 
-        <label for="activity">What were you doing when you were killed?</label>
-        <input type="text" name="activity" id="activity">
+        <div id="fill2">
+            <label for="activity">What were you doing when you were killed?</label>
+            <input type="text" name="activity" id="activity">
 
-        <label for="adverb">Provide an adverb </label>
-        <input type="text" name="adverb" id="adverb">
+            <label for="adverb">Provide an adverb </label>
+            <input type="text" name="adverb" id="adverb">
 
-        <label for="weapon">What were you killed with?</label>
-        <input type="text" name="weapon" id="weapon">
+            <label for="weapon">What were you killed with?</label>
+            <input type="text" name="weapon" id="weapon">
+        </div>
 
-        <label for="duration">How long did it take for the mafia to kill you?</label>
-        <input type="text" name="duration" id="duration">
+        <div id="fill3">
+            <label for="duration">How long did it take for the mafia to kill you?</label>
+            <input type="text" name="duration" id="duration">
 
-        <label for="disposal">Where was your body disposed of?</label>
-        <input type="text" name="disposal" id="disposal">
+            <label for="disposal">Where was your body disposed of?</label>
+            <input type="text" name="disposal" id="disposal">
 
-        <label for="discovery">Who discovered your body?</label>
-        <input type="text" name="discovery" id="discovery">
+            <label for="discovery">Who discovered your body?</label>
+            <input type="text" name="discovery" id="discovery">
+        </div>
     </form>
     
 </body>
