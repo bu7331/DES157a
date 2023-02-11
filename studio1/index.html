@@ -11,64 +11,77 @@
     <title>Madlibs Project</title>
 </head>
 <body>
-    <div id="prelude">
-        <div class="pre">
-            <h2>Prelude</h2>
-            <p>You are a villager in a mafia game. Unfortunately, you were the chosen one whom the mafia decided to kill on the first night. On the upside, you get to decide how you go down!</p>
-            <button id="button1">Start!</button>
-        </div>
-    </div>
+
+    <section class="hidden"> <!--Change class to "prelude"-->
+        <h2>Prelude</h2>
+        <p>You are a villager in a mafia game. Unfortunately, you were the chosen one whom the mafia decided to kill on the first night. On the upside, you get to decide how you go down!</p>
+        <button class="button">Start!</button>
+    </section>
+    
+    <section class="hidden"> <!--Change class t0 "result"-->
+        <p>At 12 am in the garden, [ ] was [ ] when the mafia spotted them. The mafia [ ] pulled out a [ ] and finished [ ] in [ ]. The mafia then disposed the body in a [ ] where it was discovered the following morning.</p>
+    </section>
 
     <form method="post" action="processor.php">
 
-        <div id="forms">
-
-            <div id="fill1">
+    <section id="screen1" class="showing">
+            <div class="formElement">
                 <label for="yourName">What is your name?</label><br>
-                <input type="text" id="yourName">
+                <input type="text" id="yourName"><br>
+            </div>
 
-                <br>
-
+            <div class="formElement">
                 <label for="time">What time did you die?</label><br>
-                <input type="text" id="time">
+                <input type="text" id="time"><br>
+            </div>
 
-                <br>
-
+            <div class="formElement">
                 <label for="location">Where did you die?</label><br>
-                <input type="text" id="location">
+                <input type="text" id="location"><br>
             </div>
 
-            <div id="fill2">
-                <label for="activity">What were you doing when you were killed?</label><br>
-                <input type="text" id="activity">
+            <button class="button" >Next</button>
+    </section>
 
-                <br>
 
-                <label for="adverb">Provide an adverb </label><br>
-                <input type="text" id="adverb">
-
-                <br>
-
-                <label for="weapon">What were you killed with?</label><br>
-                <input type="text" id="weapon">
-            </div>
-
-            <div id="fill3">
-                <label for="duration">How long did it take for the mafia to kill you?</label><br>
-                <input type="text" id="duration">
-
-                <br>
-
-                <label for="disposal">Where was your body disposed of?</label><br>
-                <input type="text" id="disposal">
-
-                <br>
-
-                <label for="discovery">Who discovered your body?</label><br>
-                <input type="text" id="discovery">
-            </div>
-
+    <section id="screen2" class="hidden">
+        <div class="formElement">
+            <label for="activity">What were you doing when you were killed?</label><br>
+            <input type="text" id="activity"><br>
         </div>
+
+        <div class="formElement">
+            <label for="adverb">Provide an adverb </label><br>
+            <input type="text" id="adverb"><br>
+        </div>
+
+        <div class="formElement">
+            <label for="weapon">What were you killed with?</label><br>
+            <input type="text" id="weapon"><br>
+        </div>
+
+        <button class="button" >Next</button>
+     </section>
+
+            
+     <section id="screen3" class="hidden">
+        <div class="formElement">
+            <label for="duration">How long did it take for the mafia to kill you?</label><br>
+            <input type="text" id="duration"><br>
+        </div>
+
+        <div class="formElement">
+            <label for="disposal">Where was your body disposed of?</label><br>
+            <input type="text" id="disposal"><br>
+        </div>
+
+        <div class="formElement">
+            <label for="discovery">Who discovered your body?</label><br>
+            <input type="text" id="discovery"><br>
+        </div>
+
+        <button class="button" >Next</button>
+
     </form>
     
 </body>
