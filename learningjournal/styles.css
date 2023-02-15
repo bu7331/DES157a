@@ -10,12 +10,23 @@ body{
 }
 .par{
     margin-bottom:50px;
+    border: 2px dashed white;
+    border-radius: 10px;
+    padding:2em;
+}
+
+h1{
+    font-family: 'Cedarville Cursive', cursive;
+    color:rgb(83, 58, 110);
+    font-size: 2.5em;
+    margin-bottom:20px;
 }
 
 h2{
     font-family: 'Cedarville Cursive', cursive;
     color:rgb(83, 58, 110);
-    font-size: 2.5em;
+    font-size:1.7em;
+    margin-top:0;
     margin-bottom:20px;
 }
 
@@ -30,22 +41,24 @@ h3{
 p{
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
-    border: 2px dashed white;
-    border-radius: 10px;
-    padding:2em;
     margin:0;
 }
 
-footer a{
+a{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration:none;
+}
+
+/* footer a{
     font-family: 'Open Sans', sans-serif;
     text-decoration:none;
     border-bottom-style:dashed;
     border-width:2px;
     border-color:white;
     padding-bottom: 10px;
-}
+} */
 
-footer a:hover{
+a:hover{
     color:purple;
     font-weight:bold;
 }

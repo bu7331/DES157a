@@ -13,19 +13,21 @@
 </head>
 <body>
 
-    <section id="thePrelude" class="hidden"> <!--Change class to "prelude"-->
+    <section id="thePrelude" class="showing"> <!--Change class to "prelude"-->
         <h2>Prelude</h2>
         <p>You are a villager in a mafia game. Unfortunately, you were the chosen one whom the mafia decided to kill on the first night. On the upside, you get to decide how you go down!</p>
-        <button class="button">Start!</button>
+        <button id="prebutton" class="button">Start!</button>
     </section>
     
     <section id="theResult" class="hidden"> <!--Change class t0 "result"-->
-        <p>At 12 am in the garden, [ ] was [ ] when the mafia spotted them. The mafia [ ] pulled out a [ ] and finished [ ] in [ ]. The mafia then disposed the body in a [ ] where it was discovered the following morning.</p>
+        <p>[name] was targeted by the mafia at [time] at [location].
+        They were [verb-ing] when the mafia [adverb] pulled out a [weapon] to make the kill.
+        The mafia killed their target in [time] and disposed the body in a [ ] where it was discovered the following morning by [person]</p>
     </section>
 
     <form id="myForm">
 
-        <section id="screen1" class="showing">
+        <section id="screen1" class="hidden">
                 <div class="formElement">
                     <label for="yourName">What is your name?</label><br>
                     <input type="text" id="yourName"><br>
@@ -41,7 +43,7 @@
                     <input type="text" id="location"><br>
                 </div>
 
-                <button class="button" >Next</button>
+                <button id="button1" class="button" >Next</button>
         </section>
 
 
@@ -61,7 +63,7 @@
                 <input type="text" id="weapon"><br>
             </div>
 
-            <button class="button" >Next</button>
+            <button id="button2" class="button" >Next</button>
         </section>
 
                 
@@ -81,7 +83,7 @@
                 <input type="text" id="discovery"><br>
             </div>
 
-            <button class="button" >Next</button>
+            <button id="button3" class="button" >Next</button>
         </section>
     </form>
 </body>
