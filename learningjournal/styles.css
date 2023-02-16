@@ -49,6 +49,9 @@ a{
     text-decoration:none;
 }
 
+figcaption{
+    font-family: 'Open Sans', sans-serif;
+}
 /* footer a{
     font-family: 'Open Sans', sans-serif;
     text-decoration:none;
