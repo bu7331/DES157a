@@ -20,9 +20,9 @@
     </section>
     
     <section id="theResult" class="hidden"> <!--Change class t0 "result"-->
-        <p>[name] was targeted by the mafia at [time] at [location].
-        They were [verb-ing] when the mafia [adverb] pulled out a [weapon] to make the kill.
-        The mafia killed their target in [time] and disposed the body in a [ ] where it was discovered the following morning by [person]</p>
+            <p id="result1"></p>
+            <p id="result2"></p>
+            <p id="result3"></p>
     </section>
 
     <form id="myForm">
@@ -30,17 +30,17 @@
         <section id="screen1" class="hidden">
                 <div class="formElement">
                     <label for="yourName">What is your name?</label><br>
-                    <input type="text" id="yourName"><br>
+                    <input type="text" id="yourName" required><br>
                 </div>
 
                 <div class="formElement">
                     <label for="time">What time did you die?</label><br>
-                    <input type="text" id="time"><br>
+                    <input type="text" id="time" required><br>
                 </div>
 
                 <div class="formElement">
                     <label for="location">Where did you die?</label><br>
-                    <input type="text" id="location"><br>
+                    <input type="text" id="location" required><br>
                 </div>
 
                 <button id="button1" class="button" >Next</button>
@@ -50,17 +50,17 @@
         <section id="screen2" class="hidden">
             <div class="formElement">
                 <label for="activity">What were you doing when you were killed?</label><br>
-                <input type="text" id="activity"><br>
+                <input type="text" id="activity" required><br>
             </div>
 
             <div class="formElement">
                 <label for="adverb">Provide an adverb </label><br>
-                <input type="text" id="adverb"><br>
+                <input type="text" id="adverb" required><br>
             </div>
 
             <div class="formElement">
                 <label for="weapon">What were you killed with?</label><br>
-                <input type="text" id="weapon"><br>
+                <input type="text" id="weapon" required><br>
             </div>
 
             <button id="button2" class="button" >Next</button>
@@ -70,17 +70,17 @@
         <section id="screen3" class="hidden">
             <div class="formElement">
                 <label for="duration">How long did it take for the mafia to kill you?</label><br>
-                <input type="text" id="duration"><br>
+                <input type="text" id="duration" required><br>
             </div>
 
             <div class="formElement">
                 <label for="disposal">Where was your body disposed of?</label><br>
-                <input type="text" id="disposal"><br>
+                <input type="text" id="disposal" required><br>
             </div>
 
             <div class="formElement">
                 <label for="discovery">Who discovered your body?</label><br>
-                <input type="text" id="discovery"><br>
+                <input type="text" id="discovery" required><br>
             </div>
 
             <button id="button3" class="button" >Next</button>
