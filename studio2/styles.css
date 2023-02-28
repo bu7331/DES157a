@@ -1,0 +1,41 @@
+#background{
+    width:auto;
+    height:100vh;
+    margin:auto;
+    background-image:url(images/box.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.hidden{
+    display:none;
+}
+
+.item{
+    z-index:1;
+}
+
+#quiltImage{
+    position:absolute;
+    left:200px;
+    top:120px;
+}
+
+#kwaleImage{
+    position:absolute;
+    left:200px;
+    bottom:100px;
+}
+
+#lighterImage{
+    position:absolute;
+    right:250px;
+    top:140px;
+}
+
+#pillowImage{
+    position:absolute;
+    right:260px;
+    bottom:30px;
+}
