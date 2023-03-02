@@ -6,10 +6,15 @@
     background-size:contain;
     background-repeat: no-repeat;
     background-position:center;
+    position:relative;
 }
 
 .hidden{
     display:none;
+}
+
+.showing{
+    display:block;
 }
 
 .item{
@@ -18,7 +23,7 @@
 
 #quiltImage{
     position:absolute;
-    left:200px;
+    left:300px;
     top:120px;
 }
 
@@ -38,4 +43,35 @@
     position:absolute;
     right:260px;
     bottom:30px;
+}
+
+#AP{
+    background-color:antiquewhite;
+    height:400px;
+    width:550px;
+    position:relative;
+}
+
+#AP #imgs img:first-of-type {
+    width:200px;
+    align-content:center;
+    position:absolute;
+    left:40px;
+    top:20px;
+}
+
+#AP #imgs img:last-of-type{
+    width:200px;
+    align-content:center;
+    position:absolute;
+    left:40px;
+    top:200px;
+    padding-top:20px;
+}
+
+#AP #quiltText{
+    width:200px;
+    position:absolute;
+    right:30px;
+    top:10px;
 }
