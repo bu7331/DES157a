@@ -1,12 +1,24 @@
-#background{
-    width:auto;
+body{
+    width:100vw;
     height:100vh;
+    position:fixed;
+}
+#background{
+    width:1200px;
+    height:750px;
     margin:auto;
     background-image:url(images/box.png);
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position:center;
+    background-position:center; 
     position:relative;
+}
+
+#background h3{
+    position:absolute;
+    top:30px;
+    left:200px;
+    font-family: 'Shantell Sans', cursive;
+    font-style: normal;
+    color:rgb(157, 88, 100);
 }
 
 .hidden{
@@ -15,22 +27,29 @@
 
 .showing{
     display:block;
+    font-family: 'Shantell Sans', cursive;
+    font-style: normal;
+    color:rgb(157, 88, 100);
 }
 
 .item{
+    position:absolute;
     z-index:1;
 }
 
 #quiltImage{
     position:absolute;
-    left:300px;
-    top:120px;
+    width:300px;
+    height:232px;
+    left:250px;
+    top:140px;
 }
 
 #kwaleImage{
     position:absolute;
-    left:200px;
-    bottom:100px;
+    left:300px;
+    bottom:150px;
+
 }
 
 #lighterImage{
@@ -41,15 +60,18 @@
 
 #pillowImage{
     position:absolute;
-    right:260px;
-    bottom:30px;
+    right:270px;
+    bottom:100px;
 }
 
 #AP{
-    background-color:antiquewhite;
+    background-color:rgb(250,235,215);
     height:400px;
     width:550px;
     position:relative;
+    left:20px;
+    top:20px;
+    z-index:2;
 }
 
 #AP #imgs img:first-of-type {
@@ -74,4 +96,99 @@
     position:absolute;
     right:30px;
     top:10px;
+}
+
+#ET{
+    background-color:rgb(250,235,215);
+    height:500px;
+    width:460px;
+    position:relative;
+    left:160px;
+    top:100px;
+    z-index:2;
+}
+
+#ET #imgs img:first-of-type{
+    width:150px;
+    align-content:center;
+    position:absolute;
+    left:40px;
+    top:20px;
+}
+
+#ET #imgs img:last-of-type{
+    width:150px;
+    align-content:center;
+    position:absolute;
+    left:40px;
+    top:200px;
+    padding-top:60px;
+}
+
+#ET #kwaleText{
+    width:200px;
+    position:absolute;
+    right:30px;
+    top:10px;
+}
+
+#KD{
+    background-color:rgb(250,235,215);
+    height:320px;
+    width:500px;
+    position:relative;
+    left:600px;
+    top:250px;
+    z-index:2;
+}
+
+#KD #imgs{
+    align-content:center;
+    position:absolute;
+    left:40px;
+    top:20px;
+}
+
+#KD #dogText{
+    width:200px;
+    position:absolute;
+    right:30px;
+    top:10px;
+}
+
+#NN{
+    background-color:rgb(250,235,215);
+    height:320px;
+    width:500px;
+    position:relative;
+    left:600px;
+    top:70px;
+    z-index:2;
+}
+
+#NN #imgs{
+    align-content:center;
+    position:absolute;
+    left:20px;
+    top:20px;
+}
+
+#NN #lighterText{
+    width:200px;
+    position:absolute;
+    right:30px;
+    top:10px;
+}
+
+button{
+    border-style:none;
+    font-family:'Shantell Sans', cursive;
+    font-style: normal;
+    background-color: rgb(96, 122, 226);
+    color:white;
+    size:1.5em;
+}
+
+button:hover{
+    background-color:rgb(157, 88, 100);
 }
