@@ -186,7 +186,7 @@ button{
     font-style: normal;
     background-color: rgb(96, 122, 226);
     color:white;
-    size:1.5em;
+    resize:1.5em;
 }
 
 button:hover{
