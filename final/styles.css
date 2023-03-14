@@ -1,0 +1,30 @@
+body{
+    width:auto;
+    margin-left:300px;
+    margin-right:300px;
+    margin-top:100px;
+    margin-bottom:100px;
+    background-color:rgb(185, 237, 191);
+    color:rgb(63, 89, 66);
+}
+
+h1, h2{
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+p, a, figure{
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    padding-bottom:80px;
+}
+
+#img{
+    width:450px;
+}
+
+img{
+    padding-bottom:20px;
+}
+

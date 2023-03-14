@@ -1,0 +1,12 @@
+body{
+    width:auto;
+    height:100vh;
+    margin:auto;
+    background-color:rgb(199, 249, 249);
+    font-family: 'Inria Sans', sans-serif;
+}
+#dice{
+    width:100px;
+    height:150px;
+    background-color:blue;
+}
