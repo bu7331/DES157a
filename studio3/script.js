@@ -9,7 +9,7 @@
     const actionArea=document.getElementById('actions');
 
     const gameData={
-        dice:['1die.jpg','2die.jpg','3die.jpg','4die.jpg','5die.jpg','6die.jpg'],
+        dice:['images/bee.png','images/dice2.png','images/dice3.png','images/dice4.png','images/dice5.png','images/dice6.png'],
         players:['player1','player2'],
         score:['0,0'],
         roll1:0,
