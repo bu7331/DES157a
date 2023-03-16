@@ -1,8 +1,7 @@
 (function(){
     'use strict';
     console.log('running js');
-    alert("Figure out how to access the interior of the box and find the clickable items within (not all items are clickable)");
-
+    
     const exterior=document.getElementById('exterior');
     const quilt=document.querySelector('#quiltImage');
     const kwale=document.querySelector('#kwaleImage');
