@@ -5,25 +5,6 @@ body{
     background-color: #94AAD4;
 }
 
-#exterior{
-    width:1200px;
-    height:750px;
-    margin:auto;
-    background-position:center; 
-    position:relative;
-}
-
-#lock{
-    width:44.73px;
-    height:54.42px;
-    position:absolute;
-    bottom:332.07px;
-    left:502.99px;
-    filter:grayscale(70%);
-    transition:all .3s ease-in-out;
-    /* background-color: aqua; */
-}
-
 #background{
     width:1200px;
     height:750px;
@@ -63,11 +44,6 @@ body{
 .item{
     position:absolute;
     z-index:1;
-    filter:grayscale(70%);
-}
-
-.noitem{
-    filter:grayscale(70%);
 }
 
 #quiltImage{
@@ -97,29 +73,6 @@ body{
     bottom:100px;
 }
 
-#catImage{
-    position:absolute;
-    left:500px;
-    top:50px;
-}
-
-#notepadImage{
-    position:absolute;
-    right:100px;
-    top:50px;
-}
-
-#charmImage{
-    position:absolute;
-    bottom:50px;
-    right:100px;
-}
-
-#headphoneImage{
-    position:absolute;
-    bottom:50px;
-    left:130px;
-}
 #AP{
     background-color:rgb(250,235,215);
     height:400px;
@@ -251,12 +204,4 @@ button{
 
 button:hover{
     background-color:rgb(157, 88, 100);
-}
-
-#lock:hover{
-    filter:grayscale(0);
-}
-
-.item:hover{
-    filter:grayscale(0);
 }

@@ -1,10 +1,7 @@
 (function(){
     'use strict';
     console.log('running js');
-    alert("Figure out how to access the interior of the box and find the clickable items within (not all items are clickable)");
 
-    const lock=document.getElementById('lock');
-    const exterior=document.getElementById('exterior');
     const quilt=document.querySelector('#quiltImage');
     const kwale=document.querySelector('#kwaleImage');
     const pillow=document.querySelector('#pillowImage');
@@ -13,10 +10,6 @@
     const exit2=document.querySelector('#exit2');
     const exit3=document.querySelector('#exit3');
     const exit4=document.querySelector('#exit4');
-
-    lock.addEventListener('click',function(){
-        exterior.className='hidden';
-    });
 
     quilt.addEventListener('click',function(){
         document.getElementById('AP').className='showing';
