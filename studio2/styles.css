@@ -13,6 +13,17 @@ body{
     position:relative;
 }
 
+#lock{
+    width:44.73px;
+    height:54.42px;
+    position:absolute;
+    bottom:332.07px;
+    left:502.99px;
+    filter:grayscale(70%);
+    transition:all .3s ease-in-out;
+    /* background-color: aqua; */
+}
+
 #background{
     width:1200px;
     height:750px;
@@ -52,6 +63,11 @@ body{
 .item{
     position:absolute;
     z-index:1;
+    filter:grayscale(70%);
+}
+
+.noitem{
+    filter:grayscale(70%);
 }
 
 #quiltImage{
@@ -220,6 +236,10 @@ body{
     top:10px;
 }
 
+p{
+    margin-bottom:5px;
+}
+
 button{
     border-style:none;
     font-family:'Shantell Sans', cursive;
@@ -231,4 +251,12 @@ button{
 
 button:hover{
     background-color:rgb(157, 88, 100);
+}
+
+#lock:hover{
+    filter:grayscale(0);
+}
+
+.item:hover{
+    filter:grayscale(0);
 }
