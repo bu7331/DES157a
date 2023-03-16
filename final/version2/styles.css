@@ -1,0 +1,262 @@
+body{
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    background-color: #94AAD4;
+}
+
+#exterior{
+    width:1200px;
+    height:750px;
+    margin:auto;
+    background-position:center; 
+    position:relative;
+}
+
+#lock{
+    width:44.73px;
+    height:54.42px;
+    position:absolute;
+    bottom:332.07px;
+    left:502.99px;
+    filter:grayscale(70%);
+    transition:all .3s ease-in-out;
+    /* background-color: aqua; */
+}
+
+#background{
+    width:1200px;
+    height:750px;
+    margin:auto;
+    background-image:url(images/box.png);
+    background-position:center; 
+    position:relative;
+}
+
+#paper{
+    margin:auto;
+    position:absolute;
+    left:160px;
+    bottom:100px;
+}
+
+#background h3{
+    position:absolute;
+    top:30px;
+    left:200px;
+    font-family: 'Shantell Sans', cursive;
+    font-style: normal;
+    color:rgb(157, 88, 100);
+}
+
+.hidden{
+    display:none;
+}
+
+.showing{
+    display:block;
+    font-family: 'Shantell Sans', cursive;
+    font-style: normal;
+    color:rgb(157, 88, 100);
+}
+
+.item{
+    position:absolute;
+    z-index:1;
+    filter:grayscale(70%);
+}
+
+.noitem{
+    filter:grayscale(70%);
+}
+
+#quiltImage{
+    position:absolute;
+    width:300px;
+    height:232px;
+    left:250px;
+    top:140px;
+}
+
+#kwaleImage{
+    position:absolute;
+    left:300px;
+    bottom:150px;
+
+}
+
+#lighterImage{
+    position:absolute;
+    right:250px;
+    top:180px;
+}
+
+#pillowImage{
+    position:absolute;
+    right:330px;
+    bottom:100px;
+}
+
+#catImage{
+    position:absolute;
+    left:500px;
+    top:50px;
+}
+
+#notepadImage{
+    position:absolute;
+    right:100px;
+    top:50px;
+}
+
+#charmImage{
+    position:absolute;
+    bottom:50px;
+    right:100px;
+}
+
+#headphoneImage{
+    position:absolute;
+    bottom:50px;
+    left:130px;
+}
+#AP{
+    background-color:rgb(250,235,215);
+    height:400px;
+    width:550px;
+    position:relative;
+    left:20px;
+    top:20px;
+    z-index:2;
+}
+
+#AP #imgs img:first-of-type {
+    width:200px;
+    align-content:center;
+    position:absolute;
+    left:40px;
+    top:20px;
+}
+
+#AP #imgs img:last-of-type{
+    width:200px;
+    align-content:center;
+    position:absolute;
+    left:40px;
+    top:200px;
+    padding-top:20px;
+}
+
+#AP #quiltText{
+    width:200px;
+    position:absolute;
+    right:30px;
+    top:10px;
+}
+
+#ET{
+    background-color:rgb(250,235,215);
+    height:500px;
+    width:460px;
+    position:relative;
+    left:160px;
+    top:100px;
+    z-index:2;
+}
+
+#ET #imgs img:first-of-type{
+    width:150px;
+    align-content:center;
+    position:absolute;
+    left:40px;
+    top:20px;
+}
+
+#ET #imgs img:last-of-type{
+    width:150px;
+    align-content:center;
+    position:absolute;
+    left:40px;
+    top:200px;
+    padding-top:60px;
+}
+
+#ET #kwaleText{
+    width:200px;
+    position:absolute;
+    right:30px;
+    top:10px;
+}
+
+#KD{
+    background-color:rgb(250,235,215);
+    height:320px;
+    width:500px;
+    position:relative;
+    left:600px;
+    top:250px;
+    z-index:2;
+}
+
+#KD #imgs{
+    align-content:center;
+    position:absolute;
+    left:40px;
+    top:20px;
+}
+
+#KD #dogText{
+    width:200px;
+    position:absolute;
+    right:30px;
+    top:10px;
+}
+
+#NN{
+    background-color:rgb(250,235,215);
+    height:320px;
+    width:500px;
+    position:relative;
+    left:600px;
+    top:70px;
+    z-index:2;
+}
+
+#NN #imgs{
+    align-content:center;
+    position:absolute;
+    left:20px;
+    top:20px;
+}
+
+#NN #lighterText{
+    width:200px;
+    position:absolute;
+    right:30px;
+    top:10px;
+}
+
+p{
+    margin-bottom:5px;
+}
+
+button{
+    border-style:none;
+    font-family:'Shantell Sans', cursive;
+    font-style: normal;
+    background-color: rgb(96, 122, 226);
+    color:white;
+    resize:1.5em;
+}
+
+button:hover{
+    background-color:rgb(157, 88, 100);
+}
+
+#lock:hover{
+    filter:grayscale(0);
+}
+
+.item:hover{
+    filter:grayscale(0);
+}
