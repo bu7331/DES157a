@@ -7,11 +7,12 @@
     const game=document.getElementById('game');
     const score=document.getElementById('score');
     const actionArea=document.getElementById('actions');
+    const instructions=document.getElementById('instructions');
 
     const gameData={
         dice:['images/bee.png','images/dice2.png','images/dice3.png','images/dice4.png','images/dice5.png','images/dice6.png'],
         players:['player1','player2'],
-        score:['0','0'],
+        score:[0,0],
         roll1:0,
         roll2:0,
         rollSum:0,
@@ -20,6 +21,7 @@
     }
 
     startGame.addEventListener('click',function(){
+        instructions.innerHTML='';
         gameData.index=Math.round(Math.random());
         gameControl.innerHTML='<h2>The game has started</h2>';
         gameControl.innerHTML += '<button id="quit">Wanna Quit?</button>';
@@ -32,7 +34,7 @@
     });
 
     function setUpTurn(){
-        game.innerHTML=`<p>Roll the dice for the ${gameData.players[gameData.index]}</p>`;
+        game.innerHTML=`<p>Generate flies for ${gameData.players[gameData.index]}</p>`;
         actionArea.innerHTML='<button id="roll">Generate Flies</button>';
         document.getElementById('roll').addEventListener('click',function(){
             // console.log('roll the dice');
@@ -44,7 +46,7 @@
         actionArea.innerHTML='';
         gameData.roll1=Math.floor(Math.random()*6)+1;
         gameData.roll2=Math.floor(Math.random()*6)+1;
-        game.innerHTML=`<p>Roll the dice for ${gameData.players[gameData.index]}</p>`;
+        game.innerHTML=`<p>Generate flies for ${gameData.players[gameData.index]}</p>`;
         game.innerHTML += `<img src="${gameData.dice[gameData.roll1-1]}">`;
         game.innerHTML += `<img src="${gameData.dice[gameData.roll2-1]}">`;
         gameData.rollSum=gameData.roll1 + gameData.roll2;

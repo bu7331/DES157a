@@ -1,14 +1,17 @@
 body{
     width:auto;
-    height:100vh;
-    margin:auto;
-    margin-left:100px;
-    margin-right:100px;
+    height:100%vh;
     margin-top:50px;
     background-color:rgb(199, 249, 249);
     font-family: 'Inria Sans', sans-serif;
     text-align:center;
     color:rgb(37, 78, 78);
+}
+
+#instructions{
+    width:600px;
+    margin:auto;
+    text-align:center;
 }
 
 button{
@@ -21,12 +24,36 @@ button{
     padding-top:0.5em;
     padding-bottom:0.5em;
 }
+#game{
+    width:600px;
+    margin:auto;
+}
 
+#actions{
+    width:200px;
+    margin:auto;
+}
 #score{
-    padding-left:100px;
-    padding-right:100px;
+    width:900px;
+    margin:auto;
+    /* padding-left:100px;
+    padding-right:100px; */
+    /* position:relative;
+    z-index:-1; */
+}
+
+#illusts{
+    height:300px;
     display:flex;
-    justify-content:space-between;
+    justify-content:space-around;
+}
+
+#left{
+    width:550px;
+}
+
+#right{
+    width:550px;
 }
 
 button:hover{

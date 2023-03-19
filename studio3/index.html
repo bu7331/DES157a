@@ -13,9 +13,11 @@
 </head>
 <body>
     <h1>FROGGO</h1>
-    <p>The froggos are hungry. Help your frog catch more than one fly, but make sure they 
-        don’t eat a bee on accident. Make sure your frog has a fuller belly than the other frog!</p> 
-    <p>First froggo to catch 30 flies (without swallowing a bee) wins!</p>
+    <div id="instructions">
+        <p>The froggos are hungry. Help your frog catch more than one fly, but make sure they 
+            don’t eat a bee on accident. Make sure your frog has a fuller belly than the other frog!</p> 
+        <p>First froggo to catch 30 flies (without swallowing a bee) wins!</p>
+    </div>
 
     <div id="gamecontrol">
         <h2>Start a Game</h2>
@@ -24,9 +26,18 @@
 
     <div id="game"></div>
     <div id="actions"></div>
-    <div id="score">
-        <img src="images/greenfrog.PNG" alt="greenfrog">
-        <img src="images/purplefrog.PNG" alt="purplefrog">
+    <div id="score"></div>
+
+    <div id="illusts">
+        <section id="left">
+            <img src="images/flowerL.png">
+            <img src="images/greenfrog.PNG" alt="greenfrog">
+        </section>
+
+        <section id="right">
+            <img src="images/purplefrog.PNG" alt="purplefrog">
+            <img src="images/flowerR.png">
+        </section>
     </div>
     <!-- <div id="dice"></div> -->
     
