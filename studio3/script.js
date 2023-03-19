@@ -8,6 +8,7 @@
     const score=document.getElementById('score');
     const actionArea=document.getElementById('actions');
     const instructions=document.getElementById('instructions');
+    const audio=document.querySelector('audio');
 
     const gameData={
         dice:['images/bee.png','images/dice2.png','images/dice3.png','images/dice4.png','images/dice5.png','images/dice6.png'],
@@ -21,6 +22,7 @@
     }
 
     startGame.addEventListener('click',function(){
+        audio.play();
         instructions.innerHTML='';
         gameData.index=Math.round(Math.random());
         gameControl.innerHTML='<h2>The game has started</h2>';
