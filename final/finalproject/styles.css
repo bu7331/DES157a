@@ -13,15 +13,36 @@ body{
     position:relative;
 }
 
+#instructions{
+    width:153px;
+    height:24px;
+    background-image:url("images/instructions.png");
+    background-repeat:no-repeat;
+    position:absolute;
+    left:114px;
+    top:91px;
+}
+
+#keychain{
+    width:390.4px;
+    height:430.95px;
+    background-image:url("images/keychain.png");
+    background-repeat:no-repeat;
+    position:absolute;
+    left:788.6px;
+
+}
+
 #lock{
     width:44.73px;
     height:54.42px;
+    background-image: url("images/keyhole.png");
+    background-repeat: no-repeat;
     position:absolute;
     bottom:332.07px;
     left:502.99px;
-    filter:grayscale(70%);
+    filter:grayscale(80%); 
     transition:all .3s ease-in-out;
-    /* background-color: aqua; */
 }
 
 #background{
@@ -33,12 +54,22 @@ body{
     position:relative;
 }
 
-#paper{
+#back{
+    width:64px;
+    height:45px;
+    background-image:url("images/back.png");
+    background-repeat:none;
+    position:absolute;
+    left:150px;
+    top:30px;
+}
+
+/* #paper{
     margin:auto;
     position:absolute;
     left:160px;
     bottom:100px;
-}
+} */
 
 #background h3{
     position:absolute;
@@ -63,11 +94,11 @@ body{
 .item{
     position:absolute;
     z-index:1;
-    filter:grayscale(70%);
+    filter:grayscale(80%);
 }
 
 .noitem{
-    filter:grayscale(70%);
+    filter:grayscale(100%);
 }
 
 #quiltImage{
@@ -244,17 +275,30 @@ button{
     border-style:none;
     font-family:'Shantell Sans', cursive;
     font-style: normal;
-    background-color: rgb(96, 122, 226);
-    color:white;
+    background-color: rgba(96, 122, 226,0);
+    border-color:rgb(96, 122, 226);
+    color:rgb(96, 122, 226);
     resize:1.5em;
 }
 
+
 button:hover{
     background-color:rgb(157, 88, 100);
+    color:white;
+}
+
+#keychain:hover{
+    background-image:url("images/keychainHover.png");
 }
 
 #lock:hover{
     filter:grayscale(0);
+}
+
+#back:hover{
+    width:67px;
+    height:45px;
+    background-image:url("images/backHover.png");
 }
 
 .item:hover{
