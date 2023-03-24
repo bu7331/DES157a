@@ -58,18 +58,11 @@ body{
     width:64px;
     height:45px;
     background-image:url("images/back.png");
-    background-repeat:none;
+    background-repeat:no-repeat;
     position:absolute;
     left:150px;
     top:30px;
 }
-
-/* #paper{
-    margin:auto;
-    position:absolute;
-    left:160px;
-    bottom:100px;
-} */
 
 #background h3{
     position:absolute;
@@ -278,7 +271,6 @@ button{
     background-color: rgba(96, 122, 226,0);
     border-color:rgb(96, 122, 226);
     color:rgb(96, 122, 226);
-    resize:1.5em;
 }
 
 
